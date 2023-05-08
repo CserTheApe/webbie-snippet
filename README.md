@@ -1,6 +1,4 @@
-# webbie-snippet
-
----
+# webbie-snippet [![NPM version](https://img.shields.io/npm/v/webbie-snippet.svg?style=flat)](https://www.npmjs.com/package/webbie-snippet) [![NPM monthly downloads](https://img.shields.io/npm/dm/webbie-snippet.svg?style=flat)](https://npmjs.org/package/webbie-snippet) [![NPM total downloads](https://img.shields.io/npm/dt/webbie-snippet.svg?style=flat)](https://npmjs.org/package/webbie-snippet)
 
 Add code snippets to your page with this web component.
 
