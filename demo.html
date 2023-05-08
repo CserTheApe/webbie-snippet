@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block {
+        margin: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Snippet Demos</h1>
+    <div class="block">
+      <h2>Default behaviour</h2>
+      <h4>Output</h4>
+      <cwc-snippet>
+        <p>Hello there! "'%</p>
+        <div>This is default auto spaced text</div>
+        <div>
+          <p>HELLO?</p>
+        </div>
+
+        <b>It deletes all leading and trailing empty lines</b>
+              <p>And</p>
+        <p>Sets the spacing for each line relative to</p>
+        <p>the spacing on the first line of text</p>
+      </cwc-snippet>
+      <h4>Code</h4>
+      <cwc-snippet dark>
+        <cwc-snippet>
+          <p>Hello there! "'%</p>
+          <div>This is default auto spaced text</div>
+          <div>
+            <p>HELLO?</p>
+          </div>
+
+          <b>It deletes all leading and trailing empty lines</b>
+                <p>And</p>
+          <p>Sets the spacing for each line relative to</p>
+          <p>the spacing on the first line of text</p>
+        </cwc-snippet>
+      </cwc-snippet>
+    </div>
+    <hr />
+    <div class="block">
+      <h2>Line numbers</h2>
+      <h4>Output</h4>
+      <cwc-snippet numbered>
+        <p>
+          Empty boolean attributes inside the snippet seem to be rendered as
+          empty strings.
+        </p>
+
+        <div>
+          <p>You can set the attribute as just "numbered".</p>
+          <p>
+            Has something to do with XHMTL validation apparently. But that's the
+            browser's responsibility
+          </p>
+        </div>
+      </cwc-snippet>
+      <h4>Code</h4>
+      <cwc-snippet dark>
+        <cwc-snippet numbered>
+          <p>
+            Empty boolean attributes inside the snippet seem to be rendered as
+            empty strings.
+          </p>
+
+          <div>
+            <p>You can set the attribute as just "numbered".</p>
+            <p>
+              Has something to do with XHMTL validation apparently, but that's
+              the browser's responsibility.
+            </p>
+          </div>
+        </cwc-snippet>
+      </cwc-snippet>
+    </div>
+    <hr />
+    <div class="block">
+      <h2>Manual spacing</h2>
+      <h4>Output</h4>
+      <cwc-snippet manual-spacing numbered>
+        function lookAtThis() {
+            let var1 = "The spacing is taken from the input as is";
+            return "The line numbering shows the leading and trailing empty lines as in the code";
+        }
+      </cwc-snippet>
+      <h4>Code</h4>
+      <cwc-snippet dark manual-spacing>
+        <cwc-snippet manual-spacing numbered>
+            function lookAtThis() {
+                let var1 = "The spacing is taken from the input as is";
+                return "The line numbering shows the leading and trailing empty lines as in the code";
+            }
+        </cwc-snippet>
+      </cwc-snippet>
+    </div>
+    <hr />
+    <div class="block">
+        <h2>Dark mode</h2>
+        <h4>Output</h4>
+        <cwc-snippet dark>
+            The dork side of the force,
+            UNLIMITED POWERRR!!!!!!!!!!
+        </cwc-snippet>
+        <h4>Code</h4>
+        <cwc-snippet dark>
+            <cwc-snippet dark>
+                The dork side of the force.
+                UNLIMITED POWERRR!!!!!!!!!!
+            </cwc-snippet>
+        </cwc-snippet>
+    </div>
+    <hr />
+    <div class="block">
+        <h2>Copy snippet</h2>
+        <h4>Output</h4>
+        <cwc-snippet enable-copy>
+            Please direct your attention to the top right corner of this block.
+            If you failed to see it, you should probably rest your eyes.
+            Always take care of yourself, stay hydrated.
+        </cwc-snippet>
+        <h4>Code</h4>
+        <cwc-snippet dark>
+            <cwc-snippet enable-copy>
+                Please direct your attention to the top right corner of this block.
+                If you failed to see it, you should probably rest your eyes.
+                Always take care of yourself, stay hydrated.
+            </cwc-snippet>
+        </cwc-snippet>
+    </div>
+    <hr />
+    <div class="block">
+        By the way, I didn't test this for color blindness. The copy button might fail that test.
+        But you could use the "pre-style" and "button-style" attributes to make some changes.
+        When in trouble, check the source.
+    </div>
+    <hr />
+    <div class="block">
+      <h2>Styled snippet</h2>
+      <h4>Output</h4>
+      <cwc-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
+        I'm doing this while drinking coffee at 2 am.
+        Think about that if you're ever feeling depressed.
+      </cwc-snippet>
+      <h4>Code</h4>
+      <cwc-snippet dark>
+        <cwc-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
+          I'm doing this while drinking coffee at 2 am.
+          Think about that if you're ever feeling depressed.
+        </cwc-snippet>
+      </cwc-snippet>
+  </div>
+
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>
