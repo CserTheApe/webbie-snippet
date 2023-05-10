@@ -1,6 +1,6 @@
 {
   "name": "webbie-snippet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A web component to display code blocks on your web page",
   "main": "dist/webbie-snippet.js",
   "scripts": {
