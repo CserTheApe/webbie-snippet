@@ -14,7 +14,7 @@ Install with npm: `npm install webbie-snippet`
 
 ## Usage
 
-Add script to page with `<script type="module" src="path/to/dist/main.js"></script>`
+Add script to page with `<script type="module" src="path/to/dist/webbie-snippet.js"></script>`
 
 ```html
 <webbie-snippet>
