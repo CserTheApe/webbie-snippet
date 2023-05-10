@@ -16,7 +16,7 @@
     <div class="block">
       <h2>Default behaviour</h2>
       <h4>Output</h4>
-      <cwc-snippet>
+      <webbie-snippet>
         <p>Hello there! "'%</p>
         <div>This is default auto spaced text</div>
         <div>
@@ -27,10 +27,10 @@
               <p>And</p>
         <p>Sets the spacing for each line relative to</p>
         <p>the spacing on the first line of text</p>
-      </cwc-snippet>
+      </webbie-snippet>
       <h4>Code</h4>
-      <cwc-snippet dark>
-        <cwc-snippet>
+      <webbie-snippet dark>
+        <webbie-snippet>
           <p>Hello there! "'%</p>
           <div>This is default auto spaced text</div>
           <div>
@@ -41,14 +41,14 @@
                 <p>And</p>
           <p>Sets the spacing for each line relative to</p>
           <p>the spacing on the first line of text</p>
-        </cwc-snippet>
-      </cwc-snippet>
+        </webbie-snippet>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
       <h2>Line numbers</h2>
       <h4>Output</h4>
-      <cwc-snippet numbered>
+      <webbie-snippet numbered>
         <p>
           Empty boolean attributes inside the snippet seem to be rendered as
           empty strings.
@@ -61,10 +61,10 @@
             browser's responsibility
           </p>
         </div>
-      </cwc-snippet>
+      </webbie-snippet>
       <h4>Code</h4>
-      <cwc-snippet dark>
-        <cwc-snippet numbered>
+      <webbie-snippet dark>
+        <webbie-snippet numbered>
           <p>
             Empty boolean attributes inside the snippet seem to be rendered as
             empty strings.
@@ -77,62 +77,62 @@
               the browser's responsibility.
             </p>
           </div>
-        </cwc-snippet>
-      </cwc-snippet>
+        </webbie-snippet>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
       <h2>Manual spacing</h2>
       <h4>Output</h4>
-      <cwc-snippet manual-spacing numbered>
+      <webbie-snippet manual-spacing numbered>
         function lookAtThis() {
             let var1 = "The spacing is taken from the input as is";
             return "The line numbering shows the leading and trailing empty lines as in the code";
         }
-      </cwc-snippet>
+      </webbie-snippet>
       <h4>Code</h4>
-      <cwc-snippet dark manual-spacing>
-        <cwc-snippet manual-spacing numbered>
+      <webbie-snippet dark manual-spacing>
+        <webbie-snippet manual-spacing numbered>
             function lookAtThis() {
                 let var1 = "The spacing is taken from the input as is";
                 return "The line numbering shows the leading and trailing empty lines as in the code";
             }
-        </cwc-snippet>
-      </cwc-snippet>
+        </webbie-snippet>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
         <h2>Dark mode</h2>
         <h4>Output</h4>
-        <cwc-snippet dark>
+        <webbie-snippet dark>
             The dork side of the force,
             UNLIMITED POWERRR!!!!!!!!!!
-        </cwc-snippet>
+        </webbie-snippet>
         <h4>Code</h4>
-        <cwc-snippet dark>
-            <cwc-snippet dark>
+        <webbie-snippet dark>
+            <webbie-snippet dark>
                 The dork side of the force.
                 UNLIMITED POWERRR!!!!!!!!!!
-            </cwc-snippet>
-        </cwc-snippet>
+            </webbie-snippet>
+        </webbie-snippet>
     </div>
     <hr />
     <div class="block">
         <h2>Copy snippet</h2>
         <h4>Output</h4>
-        <cwc-snippet enable-copy>
+        <webbie-snippet enable-copy>
             Please direct your attention to the top right corner of this block.
             If you failed to see it, you should probably rest your eyes.
             Always take care of yourself, stay hydrated.
-        </cwc-snippet>
+        </webbie-snippet>
         <h4>Code</h4>
-        <cwc-snippet dark>
-            <cwc-snippet enable-copy>
+        <webbie-snippet dark>
+            <webbie-snippet enable-copy>
                 Please direct your attention to the top right corner of this block.
                 If you failed to see it, you should probably rest your eyes.
                 Always take care of yourself, stay hydrated.
-            </cwc-snippet>
-        </cwc-snippet>
+            </webbie-snippet>
+        </webbie-snippet>
     </div>
     <hr />
     <div class="block">
@@ -144,19 +144,19 @@
     <div class="block">
       <h2>Styled snippet</h2>
       <h4>Output</h4>
-      <cwc-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
+      <webbie-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
         I'm doing this while drinking coffee at 2 am.
         Think about that if you're ever feeling depressed.
-      </cwc-snippet>
+      </webbie-snippet>
       <h4>Code</h4>
-      <cwc-snippet dark>
-        <cwc-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
+      <webbie-snippet dark>
+        <webbie-snippet enable-copy pre-style="font-family: cursive" button-style="background-color: #ffdddd;">
           I'm doing this while drinking coffee at 2 am.
           Think about that if you're ever feeling depressed.
-        </cwc-snippet>
-      </cwc-snippet>
+        </webbie-snippet>
+      </webbie-snippet>
   </div>
 
-    <script type="module" src="dist/main.js"></script>
+    <script type="module" src="dist/webbie-snippet.js"></script>
   </body>
 </html>

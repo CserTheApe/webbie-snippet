@@ -1,7 +1,7 @@
 import Template from "./template.js";
 import { autoSpace, encodeArray } from "./operations.js";
 
-export default class CwcSnippet extends HTMLElement {
+export default class WebbieSnippet extends HTMLElement {
   constructor() {
     super();
 
@@ -54,6 +54,6 @@ export default class CwcSnippet extends HTMLElement {
   }
 }
 
-if (!customElements.get("cwc-snippet")) {
-  customElements.define("cwc-snippet", CwcSnippet);
+if (!customElements.get("webbie-snippet")) {
+  customElements.define("webbie-snippet", WebbieSnippet);
 }

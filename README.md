@@ -17,9 +17,9 @@ Install with npm: `npm install webbie-snippet`
 Add script to page with `<script type="module" src="path/to/dist/main.js"></script>`
 
 ```html
-<cwc-snippet>
+<webbie-snippet>
     --- The code/text which will be shown in snippet ---
-</cwc-snippet>
+</webbie-snippet>
 ```
 
 ---
