@@ -20,7 +20,10 @@ export function autoSpace(strArray) {
   let conArray = strArray.slice(firstIndex, lastIndex + 1);
   let spaceIndex = conArray[0].search(/\S/);
   if (spaceIndex > 0) {
-    return conArray.map((x) => x.slice(spaceIndex));
+    return conArray.map((x) => {
+      let lineSpaceIndex = x.search(/\S/);
+      return x.slice(Math.min(lineSpaceIndex, spaceIndex));
+    });
   }
   return conArray;
 }
