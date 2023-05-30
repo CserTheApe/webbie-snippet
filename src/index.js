@@ -28,7 +28,6 @@ export default class WebbieSnippet extends HTMLElement {
 
     // Split input into lines and encode them
     let inputText = this.innerHTML.split("\n");
-    console.log(inputText);
     if (!manualSpacing) inputText = autoSpace(inputText);
     let encodedText = encodeArray(inputText);
 
